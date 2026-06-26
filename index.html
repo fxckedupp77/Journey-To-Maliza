@@ -1,1 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>For you ❤️</title>
+<style>
+  body {
+    margin:0;
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+    font-family: Arial;
+  }
 
+  .card {
+    background:white;
+    padding:40px;
+    border-radius:20px;
+    text-align:center;
+    max-width:400px;
+    box-shadow:0 10px 30px rgba(0,0,0,0.2);
+  }
+
+  h1 {
+    color:#ff4d88;
+    font-size:28px;
+  }
+
+  button {
+    margin-top:20px;
+    padding:10px 20px;
+    border:none;
+    border-radius:10px;
+    background:#ff4d88;
+    color:white;
+    cursor:pointer;
+    font-size:16px;
+  }
+
+  #msg {
+    margin-top:20px;
+    font-size:18px;
+    display:none;
+    color:#333;
+  }
+</style>
+</head>
+
+<body>
+
+<div class="card">
+  <h1>Привет, <span id="name">ЕЁ ИМЯ</span> ❤️</h1>
+
+  <p>У меня есть для тебя маленькое сообщение...</p>
+
+  <button onclick="show()">Открыть 💌</button>
+
+  <div id="msg">
+    Я не знаю, как правильно сказать это словами,<br><br>
+    но ты стала для меня особенной ❤️<br><br>
+    <b>— от меня</b>
+  </div>
+</div>
+
+<script>
+function show(){
+  document.getElementById("msg").style.display="block";
+}
+</script>
+
+</body>
+</html>
